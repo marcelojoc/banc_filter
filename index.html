@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roost - Material Design Real Estate</title>
+    <!-- Vendors -->
+    <!-- Material design colors -->
+    <link href="assets/vendors/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <!-- CSS animations -->
+    <link rel="stylesheet" href="assets/vendors/bower_components/animate.css/animate.min.css">
+    <!-- Select2 - Custom Selects -->
+    <link rel="stylesheet" href="assets/vendors/bower_components/select2/dist/css/select2.min.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="assets/vendors/bower_components/slick-carousel/slick/slick.css">
+    <!-- NoUiSlider - Input Slider -->
+    <link rel="stylesheet" href="assets/vendors/bower_components/nouislider/distribute/nouislider.min.css">
+    <!-- Site -->
+    <link rel="stylesheet" href="assets/css/app_1.min.css">
+    <link rel="stylesheet" href="assets/css/app_2.min.css">
+    <!-- Page Loader JS -->
+    <script src="assets/js/page-loader.min.js" async></script>
+  </head>
+  <body id="app">
+    <!-- Start page loader -->
+    <div id="page-loader">
+      <div class="page-loader__spinner"></div>
+    </div>
+    <!-- End page loader -->
+	
+	
+	
+
+	
+    <header id="header" class="header--minimal">
+      <div class="header__top">
+        <div class="container">
+          <ul class="top-nav">
+            <li class="dropdown top-nav__guest">
+              <a data-toggle="dropdown" href="#">Registrarse</a>
+              <form class="dropdown-menu stop-propagate">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Correo Electrónico">
+                  <i class="form-group__bar"></i>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Contraseña">
+                  <i class="form-group__bar"></i>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Confirmar Contraseña">
+                  <i class="form-group__bar"></i>
+                </div>
+                <p><small>Al registrarte, aceptas nuestros <a href="#">términos y condiciones</a>.</small></p>
+                <button class="btn btn-primary btn-block m-t-10 m-b-10">Registrarse</button>
+              </form>
+            </li>
+            <li class="dropdown top-nav__guest">
+              <a data-toggle="dropdown" href="#" data-rmd-action="switch-login">Iniciar Sesión</a>
+              <div class="dropdown-menu">
+                <div class="tab-content">
+                  <form class="tab-pane active in fade" id="top-nav-login">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Correo Electrónico">
+                      <i class="form-group__bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Contraseña">
+                      <i class="form-group__bar"></i>
+                    </div>
+
+                    <button class="btn btn-primary btn-block m-t-10 m-b-10">Entrar</button>
+
+                    <div class="text-center">
+                      <a href="#top-nav-forgot-password" data-toggle="tab"><small>Olvidaste tu contraseña?</small></a>
+                    </div>
+                  </form>
+
+                  <form class="tab-pane fade forgot-password" id="top-nav-forgot-password">
+                    <a href="#top-nav-login" class="top-nav__back" data-toggle="tab"></a>
+                    <p>Ingrese su Correo Electrónico para enviarle la contraseña.</p>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Correo Electrónico">
+                      <i class="form-group__bar"></i>
+                    </div>
+                    <button class="btn btn-primary btn-block">Enviar Contraseña</button>
+                  </form>
+                </div>
+              </div>
+            </li>
+
+            <li class="pull-right top-nav__icon">
+              <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+            </li>
+            <li class="pull-right top-nav__icon">
+              <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+            </li>
+            <li class="pull-right top-nav__icon">
+              <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+            </li>
+
+            <li class="pull-right hidden-xs"><span><i class="zmdi zmdi-email"></i>info@gustavosabez.com</span></li>
+            <li class="pull-right hidden-xs"><span><i class="zmdi zmdi-phone"></i>54-261-4555555</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <a class="logo" href="index-2.html">
+            <img src="assets/img/logo.png" alt="">
+            <div class="logo__text">
+              <span>Gustavo Sabez</span>
+              <span>Fotógrafo Profesional</span>
+            </div>
+          </a>
+
+          <div class="navigation-trigger visible-xs visible-sm" data-rmd-action="block-open" data-rmd-target=".navigation">
+            <i class="zmdi zmdi-menu"></i>
+          </div>
+
+          <ul class="navigation">
+            <li class="visible-xs visible-sm"><a class="navigation__close" data-rmd-action="navigation-close" href="#"><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+
+            <li class="active">
+              <a href="index-2.html">Home</a>
+            </li>
+
+            <li class="navigation__dropdown">
+              <a href="#" class="prevent-default">Categorías</a>
+
+              <ul class="navigation__drop-menu">
+                <li><a href="#">Gente</a></li>
+                <li><a href="#">Bodas</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Belleza/Moda</a></li>
+                <li><a href="#">Lugares/Monumentos</a></li>
+                <li><a href="#">Emociones</a></li>
+                <li><a href="#">Música</a></li>
+                <li><a href="#">Comida/Bebidas</a></li>
+                <li><a href="#">Naturaleza/Paisajes</a></li>
+                <li><a href="#">Viajes/Vacaciones</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__search container">
+        <form>
+          <div class="search">
+            <div class="search__body">
+              <input type="text" class="search__input" placeholder="Ingrese el texto que necesita buscar..." data-rmd-action="advanced-search-open">
+            </div>
+            <div class="search__type">
+              <a href="#">Buscar</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+	
+	
+	
+<div style="border-bottom:1px solid #f0f1f4">
+
+
+
+</div>	
+	
+    <section class="section">
+      <div class="container">
+        <div class="row listings-grid">
+          
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/1.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Museo del Vino</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/2.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Museo del Vino</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/3.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Estación Gutierrez, Metrotranvía</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/4.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Iglesia de la Merced</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/1.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Museo del Vino</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/2.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Museo del Vino</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/3.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Estación Gutierrez, Metrotranvía</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="listings-grid__item">
+              <a href="listing-detail.html">
+                <div class="listings-grid__main">
+                  <img src="assets/img/demo/listing/thumbs/4.jpg" alt="">
+                </div>
+                <div class="listings-grid__body">
+                  <p>Maipú, Iglesia de la Merced</p>
+                </div>
+                <div class="listings-grid__attrs clearfix">
+                  <div class="views pull-left"><i class="fa fa-eye"></i> 100</div>
+                  <div class="download pull-right"><i class="fa fa-download"></i> 20</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="load-more">
+          <a href="#"><i class="zmdi zmdi-refresh-alt"></i> Cargar más imágenes...</a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer__block">
+              <a class="logo clearfix" href="#">
+                <div class="logo__text">
+                  <span>Gustavo Sabez</span>
+                  <span>Fotógrafo Profesional</span>
+                </div>
+              </a>
+              <div class="f-20">54-261-4555555</div>
+              <div class="f-14 m-t-5">info@gustavosabez.com</div>
+
+              <div class="f-20 m-t-20">
+                <a href="#" class="m-r-10"><i class="zmdi zmdi-facebook"></i></a>
+                <a href="#" class="m-r-10"><i class="zmdi zmdi-twitter"></i></a>
+                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer__block footer__block--blog">
+              <div class="footer__title">Latest from our blog</div>
+
+              <a href="#">
+                Aenean lacinia bibendum nulla sed
+                <small>On 2016/06/20 at 6:00 PM</small>
+              </a>
+              <a href="#">
+                Vestibulum id ligula porta felis euismod semper
+                <small>On 2016/06/18 at 7:12 PM</small>
+              </a>
+              <a href="#">
+                Etiam porta sem malesuada magna mollis euismod
+                <small>On 2016/06/10 at 12:59 PM</small>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer__block">
+              <div class="footer__title">Disclaimer</div>
+
+              <div>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <span class="footer__copyright">© Roost Real Estates</span>
+
+          <a href="#">About Us</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Careers</a>
+          <a href="#">Agent Login</a>
+        </div>
+
+        <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
+          <i class="zmdi zmdi-chevron-up"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+	<!-- vue.js -->
+    <script src="assets/vendors/bower_components/vue/vue.js"></script>
+    <!-- jQuery -->
+    <script src="assets/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Waves button ripple effects -->
+    <script src="assets/vendors/bower_components/Waves/dist/waves.min.js"></script>
+    <!-- Select 2 - Custom Selects -->
+    <script src="assets/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!-- Slick Carousel - Custom Alerts -->
+    <script src="assets/vendors/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <!-- NoUiSlider -->
+    <script src="assets/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
+    <!-- Site functions and actions -->
+    <script src="assets/js/app.js"></script>
+    <!-- Demo only -->
+    <script src="assets/js/demo/demo.js"></script>
+  </body>
+</html>
